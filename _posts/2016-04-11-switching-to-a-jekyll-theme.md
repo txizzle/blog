@@ -22,6 +22,7 @@ Yep, I decided to go with the snazzy [HPSTR theme] instead of further extending 
 	<a href="../old_blog"><img src="images/old_blog.png" alt=""></a>
 </figure>
 I kept the old blog around [here]. 
+
 # To what you see!
 And the good news is that it's only going to get better! I can still customize this HPSTR theme and play with some features (such as displaying only excerpts ont the front page). The great thing is that now I don't **have** to in order to have a beautiful, professional looking blog - which means hopefully more writing, less tinkering. 
 
