@@ -19,7 +19,7 @@ Yep, I decided to go with the snazzy [HPSTR theme] instead of further extending 
 
 # From this...
 <figure>
-	<a href="../old_blog"><img src="/images/old_blog.jpg" alt=""></a>
+	<a href="../old_blog"><img src="/images/old_blog.png" alt=""></a>
 </figure>
 I kept the old blog around [here]. 
 # To what you see!
