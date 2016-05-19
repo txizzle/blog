@@ -35,12 +35,14 @@ image:
   </header>
   <div class="entry-content">
     {{ post.excerpt }}
+    <p>
     ...
     {% if post.link %}
       <a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">Read more</a>
     {% else %}
       <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">Read more</a>
     {% endif %}
+    </p>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}
