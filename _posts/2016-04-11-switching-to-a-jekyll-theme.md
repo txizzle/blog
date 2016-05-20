@@ -4,7 +4,7 @@ title: Switching to a Jekyll Theme
 modified:
 categories: 
 description:
-tags: []
+tags: [jekyll, markdown]
 image:
   feature:
   credit:
@@ -19,14 +19,16 @@ Yep, I decided to go with the snazzy [HPSTR theme] instead of further extending 
 
 # From this...
 <figure>
-	<a href="../old_blog"><img src="/images/old_blog.png" alt=""></a>
+	<a href="../old_blog"><img src="../images/old_blog.png" alt=""></a>
 </figure>
 I kept the old blog around [here]. 
 
 # To what you see!
-And the good news is that it's only going to get better! I can still customize this HPSTR theme and play with some features (such as displaying only excerpts ont the front page). The great thing is that now I don't **have** to in order to have a beautiful, professional looking blog - which means hopefully more writing, less tinkering. 
+And the good news is that it's only going to get better! I can still customize this HPSTR theme and play with some features (such as displaying only excerpts on the front page). The great thing is that now I don't **have** to in order to have a beautiful, professional looking blog - which means hopefully more writing, less tinkering. 
 
 Anyways, until next time - enjoy the new look! Same content, same posts, just presented in a much more HPSTR fashion. 
+
+*Update: I tinkered a little and changed the front page to show excerpts instead of entire posts - very painlessly!.* 
 
 [HPSTR theme]: <https://github.com/mmistakes/hpstr-jekyll-theme>
 [Jekyll Now]: <https://github.com/barryclark/jekyll-now>
