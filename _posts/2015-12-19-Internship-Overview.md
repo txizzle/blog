@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Hunt: The 2015 Internship Journey
+title: The Hunt&#58; The 2015 Internship Journey
 description: "What I learned from way too many applications and interviews."
 tags: [internship, amazon, SE, PM]
 ---
