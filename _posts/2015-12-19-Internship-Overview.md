@@ -1,10 +1,10 @@
 ---
 layout: post
-title: The 2015 Internship Journey
+title: The Hunt: The 2015 Internship Journey
 description: "What I learned from way too many applications and interviews."
 tags: [internship, amazon, SE, PM]
 ---
-## The Hunt
+
 This year, like many third-year students, I've looked exhaustively for "the one" internship that's supposed to crown your junior year or even your college experience in general. It's been an arduous grind, but 21 interviews later, I've signed with Amazon to spend my 2016 Summer as a Software Development Engineer Intern. I've learned so much in this process, and I think some of my takeaways will be useful for others. 
 
 ## The Numbers
