@@ -14,7 +14,8 @@ share:
 date: 2016-04-11T17:49:20-07:00
 ---
 
-# This blog looks different!
+This blog looks different! This post will just be a quick update on the style of this blog and my experiences with using a Jekyll template.
+
 Yep, I decided to go with the snazzy [HPSTR theme] instead of further extending [Jekyll Now]. I had a good deal of fun customizing Jekyll Now, but I simply couldn't pass up switching to a more aesthetically complete theme after I saw [so] very [many] different [beautiful themes]. One Product Hunt click led to another, and I ooh'd and ahh'd appropriately but one thing was common amongst the best themes: they packaged all the features I was looking for, directly *out of the box*. With Jekyll Now, I've been making slow improvements through the HTML templates and looking through pull requests, but that simply doesn't compare to something as sexy as [this]. Huge shoutout to [Michael Rose] for creating the awesome HPSTR theme! 
 
 # From this...
