@@ -1,0 +1,271 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>adViz, Part 2&#58; The Tech &#8211; Ted Xiao</title>
+<meta name="description" content="Describe your website here.">
+<meta name="keywords" content="adviz, meteorjs, india, code, SE">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://txizzle.github.io/blog/images/">
+<meta name="twitter:title" content="adViz, Part 2&#58; The Tech">
+<meta name="twitter:description" content="Describe your website here.">
+<meta name="twitter:creator" content="@xiao_ted">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="adViz, Part 2&#58; The Tech">
+<meta property="og:description" content="Describe your website here.">
+<meta property="og:url" content="http://txizzle.github.io/blog/Adviz-Part-2/">
+<meta property="og:site_name" content="Ted Xiao">
+
+
+
+
+
+<link rel="canonical" href="http://txizzle.github.io/blog/Adviz-Part-2/">
+<link href="http://txizzle.github.io/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Ted Xiao Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://txizzle.github.io/blog/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://txizzle.github.io/blog/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://txizzle.github.io/blog/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://txizzle.github.io/blog/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://txizzle.github.io/blog/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://txizzle.github.io/blog/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://txizzle.github.io/blog/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://txizzle.github.io/blog/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post" >
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://txizzle.github.io/blog/">Blog Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://txizzle.github.io/blog/images/profile.jpg" alt="Ted Xiao photo" class="author-photo">
+					<h4>Ted Xiao</h4>
+					<p>UC Berkeley student. Passionate about Machine Learning, great teams, and chess.</p>
+				</li>
+				<li><a href="http://txizzle.github.io/blog/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				<li>
+					<a href="mailto:t.xiao@berkeley.edu"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/xiao_ted"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				</li>
+				
+				
+				<li>
+					<a href="https://linkedin.com/in/tedxiao"><i class="fa fa-fw fa-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="https://github.com/txizzle"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://txizzle.github.io/blog/posts/">All Posts</a></li>
+				<li><a href="http://txizzle.github.io/blog/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	    
+	    <li><a href="http://tedxiao.me" target="_blank">Website</a></li>
+	  
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://txizzle.github.io/blog/Adviz-Part-2/" rel="bookmark" title="adViz, Part 2&#58; The Tech">adViz, Part 2&#58; The Tech</a></h1>
+        
+        <h2><span class="entry-date date published"><time datetime="2016-01-20T00:00:00-08:00">January 20, 2016</time></span></h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+Reading time ~3 minutes
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>adViz was designed not as just a mobile app or a website, but as a comprehensive solution. The complete vision includes the iOS application, the web application, and the backend that integrates with existing police systems. For the MVP, I created the web application and skeleton UI for the iOS application.</p>
+
+<figure class="half">
+	<img src="../images/demo1.png" alt="" />
+	<img src="../images/adviz_features.png" alt="" />
+	<figcaption>Components of the full solution. The MVP focussed on the web app.</figcaption>
+</figure>
+
+<p>As adViz may be developed further in the future, I won’t delve extremely deeply into the codebase. However, I’ll be pointing out key APIs, templates, and resources I found useful.</p>
+
+<h2 id="the-tech-stack">The Tech Stack</h2>
+<p>First and foremost, let’s talk tools. To build the MVP, I used to some extent the following:</p>
+
+<ul>
+  <li><a href="https://www.meteor.com/">Meteor</a> for UI, web server, data platform, and deployment</li>
+  <li><a href="&lt;http://iron-meteor.github.io/iron-router/&gt;\">Iron Router</a> for routing</li>
+  <li><a href="https://www.mongodb.com/">MongoDB</a> for database</li>
+  <li><a href="http://getbootstrap.com/">Bootstrap</a> for UI</li>
+  <li><a href="https://almsaeedstudio.com/AdminLTE">AdminLTE</a> for dashboard UI</li>
+  <li><a href="https://github.com/aldeed/meteor-autoform">Autoform</a> for forms UI</li>
+  <li><a href="https://www.twilio.com/">Twilio</a> for SMS</li>
+  <li><a href="https://github.com/Schmavery/facebook-chat-api">Facebook Chat API</a> for FB Chat</li>
+  <li><a href="https://atmospherejs.com/chart/chart">Chart.js</a> for data visualization</li>
+  <li><a href="https://github.com/dburles/meteor-google-maps">Google Maps</a> for maps and navigation</li>
+  <li><a href="www.ibm.com/smarterplanet/us/en/ibmwatson/">IBM Watson</a> for cognitive computing</li>
+  <li><a href="www.heroku.com">Heroku</a> for deployment</li>
+</ul>
+
+<p>I coded with Brackets.io, which I absolute love for front-end and full-stack work.</p>
+
+<h2 id="dashboard-ui">Dashboard UI</h2>
+<p>I used AdminLTE and customized multiple aspects to ‘meteor-ize’ it. It was my first time working with Meteor on a significantly large project, so I had to refactor many components and turn them into templates. Unfortunately, I did not find available Meteor Dashboard templates sufficient, which is why I had to go this route and port over a pure HTML/CSS dashboard template.</p>
+
+<h2 id="multi-platform-alerts">Multi-platform Alerts</h2>
+<p>For the MVP, I implemented Facebook and SMS alert messages, and sketched out how Twitter alerts would work.</p>
+
+<figure>
+	<a href="../old_blog"><img src="../images/ss_alerts.png" alt="" /></a>
+</figure>
+
+<p>Facebook messages are actually a bit tricky to implement, as Facebook <a href="https://github.com/Schmavery/facebook-chat-api">removed</a> the official Chat API service two years ago. The workaround was to use the <a href="https://developers.facebook.com/docs/chat">unofficial NPM Facebook chat package</a> and port it over to Meteor. <em>Update: Meteor 1.3 supports using <code class="highlighter-rouge">npm install</code> directly, which is awesome!</em></p>
+
+<p>SMS messages were easy to hook up with Twilio. My team was able to receive $500 in credit from Twilio, which made developing painless and fun. Thanks Twilio!</p>
+
+<h2 id="cognitive-computing">Cognitive Computing</h2>
+<p>Using <a href="www.ibm.com/smarterplanet/us/en/ibmwatson/">IBM Watson</a>’s Dialogue, Tradeoff Analytics, and Text-to-Speech, our MVP was able to leverage some of IBM’s latest cognitive computing technologies. The dialogue API is used in conversations between civilians and the police, to create a personalized experience to direct civilians to the right parties while saving costs for the police. The messaging endpoints were hooked up to messages hosted on the web application, but can definitely be extended to other platforms in the future.</p>
+
+<h2 id="data-visualization">Data Visualization</h2>
+<p>Using <a href="https://atmospherejs.com/chart/chart">Chart.js</a>’s Meteor package, I created an analytics dashboard on data supplied to us by the Vizag Police Department. While the data was by no means comprehensive, I believe that the initial dashboard shows information in a way that is intuitive yet detailed.</p>
+
+<figure>
+	<a href="../old_blog"><img src="../images/ss_trends.png" alt="" /></a>
+</figure>
+
+<p>Perhaps more importantly, Google Maps enabled us to crime information on a map. For civilians that may care about understanding a graph, a map of their neighborhood is much more accessible. From local crime data to city-wide trends, the crime maps are able to provide information at the scope needed.</p>
+
+<figure>
+	<a href="../old_blog"><img src="../images/ss_map.png" alt="" /></a>
+</figure>
+
+<h2 id="safe-navigation">Safe Navigation</h2>
+<p>Finally, one of the cornerstones of our pitch: safe navigation. While web-based navigation was not implemented for the MVP, the native IOS application utilized the Google Maps navigation API. As intermediate endpoints are not supported, we calculated many possible routes and stitched them together, balancing transit time and safety.</p>
+
+<h2 id="my-development-experience">My Development Experience</h2>
+<p>Wow, that’s more technologies than I remember working with! Seems like quite a lot when I list them all out. Let’s talk about how smoothly the experience went working with all these pieces.</p>
+
+<p>First and foremost, I’d have to say that working with Meteor was great. I’ve previously worked with Ruby on Rails, and transitioning was surprisingly easy. Many of the packages (I’m looking at you, Admin Dashboards) were a struggle to work with, and I ended up just starting from scratch for many components.</p>
+
+<p>The easiest APIs to work with were probably Twilio and Google Maps. IBM Watson and the Facebook Chat Package were not too bad, but definitely required a bit more work.</p>
+
+<p>Front-end wise, I utilized Bootstrap and the AdminLTE template heavily. I started off trying to making everything from scratch, but I quickly realized that there was no way I would be able to build out all the cool features I wanted while making everything look sleek and professional. A few (relatively) short tweaks later, and I was able to personalize the dashboard to look and function pretty great!</p>
+
+<p>Feel free to check out the adViz demo. Some features have been disabled, but most of the MVP is turned on:</p>
+
+<p><a href="http://getadviz.herokuapp.com" class="btn btn-info">adViz Demo</a></p>
+
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://txizzle.github.io/blog/tags/#adviz" title="Pages tagged adviz" class="tag"><span class="term">adviz</span></a><a href="http://txizzle.github.io/blog/tags/#meteorjs" title="Pages tagged meteorjs" class="tag"><span class="term">meteorjs</span></a><a href="http://txizzle.github.io/blog/tags/#india" title="Pages tagged india" class="tag"><span class="term">india</span></a><a href="http://txizzle.github.io/blog/tags/#code" title="Pages tagged code" class="tag"><span class="term">code</span></a><a href="http://txizzle.github.io/blog/tags/#SE" title="Pages tagged SE" class="tag"><span class="term">SE</span></a></span>
+        <span>Updated on <span class="entry-date date updated"><time datetime="2016-1-21">January 21, 2016</time></span></span>
+        <span class="author vcard"><span class="fn">Ted Xiao</span></span>
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://txizzle.github.io/blog/Adviz-Part-2/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://txizzle.github.io/blog/Adviz-Part-2/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://txizzle.github.io/blog/Adviz-Part-2/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="http://txizzle.github.io/blog/Adviz-Part-1/" class="read-more-btn">Read More</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="http://txizzle.github.io/blog/forestry-test/" title="Forestry Test">Forestry Test</a></h3>
+      <p>Testing out [Forestry.io](https://forestry.io). CMS for Jekyll.. including this blog!? This post is a test.&hellip; <a href="http://txizzle.github.io/blog/forestry-test/">Continue reading</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+      <div class="list-item">
+        <h4><a href="http://txizzle.github.io/blog/switching-to-a-jekyll-theme/" title="Switching to a Jekyll Theme">Switching to a Jekyll Theme</a></h4>
+        <span>Published on April 11, 2016</span>
+      </div><!-- /.list-item -->
+    
+      <div class="list-item">
+        <h4><a href="http://txizzle.github.io/blog/Adviz-Part-1/" title="adViz, Part 1&#58; Building My First MVP">adViz, Part 1&#58; Building My First MVP</a></h4>
+        <span>Published on January 14, 2016</span>
+      </div><!-- /.list-item -->
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2016 Ted Xiao. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://txizzle.github.io/blog/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://txizzle.github.io/blog/assets/js/scripts.min.js"></script>
+
+
+
+	        
+
+</body>
+</html>

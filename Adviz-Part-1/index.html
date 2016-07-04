@@ -1,0 +1,259 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>adViz, Part 1&#58; Building My First MVP &#8211; Ted Xiao</title>
+<meta name="description" content="Describe your website here.">
+<meta name="keywords" content="adViz, startup, india, PM">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://txizzle.github.io/blog/images/garg.png">
+
+<meta name="twitter:title" content="adViz, Part 1&#58; Building My First MVP">
+<meta name="twitter:description" content="Describe your website here.">
+<meta name="twitter:creator" content="@xiao_ted">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="adViz, Part 1&#58; Building My First MVP">
+<meta property="og:description" content="Describe your website here.">
+<meta property="og:url" content="http://txizzle.github.io/blog/Adviz-Part-1/">
+<meta property="og:site_name" content="Ted Xiao">
+
+
+
+
+
+<link rel="canonical" href="http://txizzle.github.io/blog/Adviz-Part-1/">
+<link href="http://txizzle.github.io/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Ted Xiao Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://txizzle.github.io/blog/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://txizzle.github.io/blog/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://txizzle.github.io/blog/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://txizzle.github.io/blog/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://txizzle.github.io/blog/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://txizzle.github.io/blog/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://txizzle.github.io/blog/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://txizzle.github.io/blog/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://txizzle.github.io/blog/">Blog Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://txizzle.github.io/blog/images/profile.jpg" alt="Ted Xiao photo" class="author-photo">
+					<h4>Ted Xiao</h4>
+					<p>UC Berkeley student. Passionate about Machine Learning, great teams, and chess.</p>
+				</li>
+				<li><a href="http://txizzle.github.io/blog/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				<li>
+					<a href="mailto:t.xiao@berkeley.edu"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/xiao_ted"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				</li>
+				
+				
+				<li>
+					<a href="https://linkedin.com/in/tedxiao"><i class="fa fa-fw fa-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="https://github.com/txizzle"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://txizzle.github.io/blog/posts/">All Posts</a></li>
+				<li><a href="http://txizzle.github.io/blog/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	    
+	    <li><a href="http://tedxiao.me" target="_blank">Website</a></li>
+	  
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+<div class="entry-header">
+  
+  <div class="entry-image">
+    <img src="http://txizzle.github.io/blog/images/garg.png" alt="adViz, Part 1&#58; Building My First MVP">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://txizzle.github.io/blog/Adviz-Part-1/" rel="bookmark" title="adViz, Part 1&#58; Building My First MVP">adViz, Part 1&#58; Building My First MVP</a></h1>
+        
+        <h2><span class="entry-date date published"><time datetime="2016-01-14T00:00:00-08:00">January 14, 2016</time></span></h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+Reading time ~3 minutes
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>I’ve built an a MVP as part of a startup I’m working on that has expanded out of a course project, and it has been quite the ride. In these posts, I’ll write about the ideas, the tech, the journey - and more.</p>
+
+<p>If you asked 10 people what the word “startup” means, you’d probably get just as many different definitions. To many college students, it could mean “an extensive tech project that I’ve spent very significant time on and can see being something more”. And isn’t that really the same thing as a pre-funding startup?</p>
+
+<p>So when people ask me what I’ve been up to, instead of responding with a confusing mouthful about a class project idea that evolved, I just reply with “working on my startup”. I guess I’m a cool kid now!</p>
+
+<h1 id="meet-adviz">Meet adViz!</h1>
+<p>These last few months, I’ve spent a significant amount of time working on a side project called <strong>adViz</strong>. The core idea is simple: adViz seeks to add <em>an intelligent security layer to your daily life</em>.</p>
+
+<p>This idea stemmed out of a course I took last semester: IEOR185, Building Smart Cities Leveraging Open Innovation. As part of the course, I developed a technical solution (adViz) with a feasible business model. This solution centered around making Visakhapatnam (one of the <a href="http://timesofindia.indiatimes.com/india/3-US-India-teams-to-draft-plan-for-3-smart-cities/articleshow/46036760.cms">three smart cities</a> under development by joint India-US teams) smart.</p>
+
+<p>Safety and security in your daily life is mostly influenced by things going on behind the scenes, with solutions that don’t function effectively and impactfully. In India, the situation is even worse; our solution targets <a href="https://en.wikipedia.org/wiki/Visakhapatnam">Visakhapatnam</a>, a growing port city in Southeast India.</p>
+
+<p>From safe navigation to modern crime alerts to an improved relationship with police departments, adViz seeks to harness the power of data to make an impact.</p>
+
+<h2 id="the-painpoints">The Painpoints</h2>
+
+<h3 id="navigation">Navigation</h3>
+<p>Currently, apps such as Google Maps or Waze can direct us the fastest route or shortest route, but not the safest route. Recently, a woman in Brazil using Waze was actually directed to the wrong address and <a href="http://edition.cnn.com/2015/10/05/americas/brazil-wrong-directions-death/">killed</a>.</p>
+
+<h3 id="civilian-communication">Civilian Communication</h3>
+<p>Police departments around the world are slow to adapt to fast-paced technological innovation. Current succesful solutions (such as <a href="http://www.amberalert.gov/">Amber Alert</a>) can be made even better by applying best practices and technical features from Silicon Valley.</p>
+
+<h3 id="corruption">Corruption</h3>
+<p>India has had unfortunate records with rampant corruption. Any solution that addresses safety should seek to rebuild trust between citizens and the police establishment.</p>
+
+<p>It’s been a crazy but rewarding journey that’s taken me through countless pivots and pitches, all the way from Berkeley, CA to Visakhapatnam, India. In the next few blog entries, I’ll write about some fun experiences and takeaways I’ve learned on this journey.</p>
+
+<h2 id="the-solution">The Solution</h2>
+<p>AdViz is an end-to-end solution that makes users safer 24/7. After countless pivots and iterations, adViz boiled down to:</p>
+
+<ul>
+  <li>Safe Navigation: Incorporating historic, crowdsourced, and police data</li>
+  <li>Crime Reporting: Transparent, logged crime reports (many paper crime reports are ignored)</li>
+  <li>Multi-platform: Crime alerts for the 21st century, not just SMS</li>
+  <li>Data Dashboard: Allowing civilians to visualize and understand their environment</li>
+  <li>Augment Existing Solutions: Work with the technology currently in place. This means complementing pieces with a holistic solution.</li>
+</ul>
+
+<h1 id="my-role">My Role</h1>
+<p>As this was my first interdisciplinary project-based class, I wasn’t sure how our team structure would fall into place.</p>
+
+<p>Over the course of a few weeks, I gradually grew into the role of a Product Manager / Lead Engineer, and was able to leverage many of my previous experience in consulting and software development. From early on, it was clear that our team was composed of a many different experience levels, interests, and motivation; this has definitely been a huge challenge, but I believe I’ve grown all the more for it. It’s been a very enlightening experience being in a position of leadership while having no direct authority. By writing a majority of the codebase, directing strategic direction, and executing the pitches, I’ve definitely learned a lot.</p>
+
+<h1 id="what-ill-write-about">What I’ll Write About</h1>
+<p>So much stuff has happened on this hectic journey that it’s hard for me to cram all of it into a single post. I’m going to split up my reflections into four parts:</p>
+
+<ul>
+  <li>Part 1: Overview [This Entry]</li>
+  <li>Part 2: adViz, The Tech</li>
+  <li>Part 3: adViz, The Pitches</li>
+</ul>
+
+<h1 id="see-you-next-installment">See you next installment!</h1>
+<p>I’m currently in Hyderabad, India, waiting for my flight to Hong Kong, where I’ll be spending 3 days. Look for an upcoming reflection on Hong Kong, which I’m confident will be as different from India as India was from California. Until next time!</p>
+
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://txizzle.github.io/blog/tags/#adViz" title="Pages tagged adViz" class="tag"><span class="term">adViz</span></a><a href="http://txizzle.github.io/blog/tags/#startup" title="Pages tagged startup" class="tag"><span class="term">startup</span></a><a href="http://txizzle.github.io/blog/tags/#india" title="Pages tagged india" class="tag"><span class="term">india</span></a><a href="http://txizzle.github.io/blog/tags/#PM" title="Pages tagged PM" class="tag"><span class="term">PM</span></a></span>
+        <span>Updated on <span class="entry-date date updated"><time datetime="2016-1-14">January 14, 2016</time></span></span>
+        <span class="author vcard"><span class="fn">Ted Xiao</span></span>
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://txizzle.github.io/blog/Adviz-Part-1/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://txizzle.github.io/blog/Adviz-Part-1/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=http://txizzle.github.io/blog/Adviz-Part-1/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="http://txizzle.github.io/blog/Internship-Overview/" class="read-more-btn">Read More</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="http://txizzle.github.io/blog/forestry-test/" title="Forestry Test">Forestry Test</a></h3>
+      <p>Testing out [Forestry.io](https://forestry.io). CMS for Jekyll.. including this blog!? This post is a test.&hellip; <a href="http://txizzle.github.io/blog/forestry-test/">Continue reading</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+      <div class="list-item">
+        <h4><a href="http://txizzle.github.io/blog/switching-to-a-jekyll-theme/" title="Switching to a Jekyll Theme">Switching to a Jekyll Theme</a></h4>
+        <span>Published on April 11, 2016</span>
+      </div><!-- /.list-item -->
+    
+      <div class="list-item">
+        <h4><a href="http://txizzle.github.io/blog/Adviz-Part-2/" title="adViz, Part 2&#58; The Tech">adViz, Part 2&#58; The Tech</a></h4>
+        <span>Published on January 20, 2016</span>
+      </div><!-- /.list-item -->
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2016 Ted Xiao. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://txizzle.github.io/blog/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://txizzle.github.io/blog/assets/js/scripts.min.js"></script>
+
+
+
+	        
+
+</body>
+</html>
