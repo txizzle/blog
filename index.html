@@ -1,46 +1,332 @@
----
-layout: post-index
-title: Latest Posts
-description: "Ml, Code, Teams, and everything in between"
-tags: [Jekyll, theme, themes, responsive, blog, modern]
-comments: false
-image:
-  feature: abstract-1.jpg
----
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Latest Posts &#8211; Ted Xiao</title>
+<meta name="description" content="Ml, Code, Teams, and everything in between">
+<meta name="keywords" content="Jekyll, theme, themes, responsive, blog, modern">
 
-{% for post in paginator.posts %}
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://txizzle.github.io/blog/images/abstract-1.jpg">
+
+<meta name="twitter:title" content="Latest Posts">
+<meta name="twitter:description" content="Ml, Code, Teams, and everything in between">
+<meta name="twitter:creator" content="@xiao_ted">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Latest Posts">
+<meta property="og:description" content="Ml, Code, Teams, and everything in between">
+<meta property="og:url" content="http://txizzle.github.io/blog/">
+<meta property="og:site_name" content="Ted Xiao">
+
+
+
+
+
+<link rel="canonical" href="http://txizzle.github.io/blog/">
+<link href="http://txizzle.github.io/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Ted Xiao Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://txizzle.github.io/blog/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://txizzle.github.io/blog/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://txizzle.github.io/blog/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://txizzle.github.io/blog/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://txizzle.github.io/blog/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://txizzle.github.io/blog/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://txizzle.github.io/blog/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://txizzle.github.io/blog/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post-index" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://txizzle.github.io/blog/">Blog Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://txizzle.github.io/blog/images/profile.jpg" alt="Ted Xiao photo" class="author-photo">
+					<h4>Ted Xiao</h4>
+					<p>UC Berkeley student. Passionate about Machine Learning, great teams, and chess.</p>
+				</li>
+				<li><a href="http://txizzle.github.io/blog/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				<li>
+					<a href="mailto:t.xiao@berkeley.edu"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/xiao_ted"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				</li>
+				
+				
+				<li>
+					<a href="https://linkedin.com/in/tedxiao"><i class="fa fa-fw fa-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="https://github.com/txizzle"><i class="fa fa-fw fa-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://txizzle.github.io/blog/posts/">All Posts</a></li>
+				<li><a href="http://txizzle.github.io/blog/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	    
+	    <li><a href="http://tedxiao.me" target="_blank">Website</a></li>
+	  
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+<div class="entry-header">
+  
+  
+    <div class="entry-image">
+      <img src="http://txizzle.github.io/blog/images/abstract-1.jpg" alt="Latest Posts">
+    </div><!-- /.entry-image -->
+  
+  <div class="header-title">
+    <div class="header-title-wrap">
+      <h1>Ted Xiao</h1>
+      <h2>Latest Posts</h2>
+    </div><!-- /.header-title-wrap -->
+  </div><!-- /.header-title -->
+</div><!-- /.entry-header -->
+
+<div id="main" role="main">
+  
 <article class="hentry">
   <header>
-    {% if post.image.feature %}
-      <div class="entry-image-index">
-        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}"></a>
-      </div><!-- /.entry-image -->
-    {% endif %}
+    
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
-      {% if site.reading_time %}
+      <span class="entry-date date published updated"><time datetime="2016-04-11T17:49:20-07:00"><a href="http://txizzle.github.io/blog/switching-to-a-jekyll-theme/">April 11, 2016</a></time></span><span class="author vcard"><span class="fn"><a href="http://txizzle.github.io/blog/about/" title="About Ted Xiao">Ted Xiao</a></span></span>
+      
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
-        {% include read-time-index.html %}
+        
+Reading time ~1 minute
       </span><!-- /.entry-reading-time -->
-      {% endif %}
+      
     </div><!-- /.entry-meta -->
-    {% if post.link %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
-    {% else %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
-    {% endif %}
+    
+      <h1 class="entry-title"><a href="http://txizzle.github.io/blog/switching-to-a-jekyll-theme/" rel="bookmark" title="Switching to a Jekyll Theme" itemprop="url">Switching to a Jekyll Theme</a></h1>
+    
   </header>
   <div class="entry-content">
-    {{ post.excerpt }}
+    <p>This blog looks different! This post will just be a quick update on the style of this blog and my experiences with using a Jekyll template.</p>
+
+
     ...
-    {% if post.link %}
-      <p><a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">Read more</a></p>
-    {% else %}
-      <p><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">Read more</a></p>
-    {% endif %}
+    
+      <p><a href="http://txizzle.github.io/blog/switching-to-a-jekyll-theme/" rel="bookmark" title="Switching to a Jekyll Theme" itemprop="url">Read more</a></p>
+    
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
-{% endfor %}
 
-{% include pagination.html %}
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2016-01-20T00:00:00-08:00"><a href="http://txizzle.github.io/blog/Adviz-Part-2/">January 20, 2016</a></time></span><span class="author vcard"><span class="fn"><a href="http://txizzle.github.io/blog/about/" title="About Ted Xiao">Ted Xiao</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~3 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://txizzle.github.io/blog/Adviz-Part-2/" rel="bookmark" title="adViz, Part 2&#58; The Tech" itemprop="url">adViz, Part 2&#58; The Tech</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>adViz was designed not as just a mobile app or a website, but as a comprehensive solution. The complete vision includes the iOS application, the web application, and the backend that integrates with existing police systems. For the MVP, I created the web application and skeleton UI for the iOS application.</p>
+
+
+    ...
+    
+      <p><a href="http://txizzle.github.io/blog/Adviz-Part-2/" rel="bookmark" title="adViz, Part 2&#58; The Tech" itemprop="url">Read more</a></p>
+    
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+      <div class="entry-image-index">
+        <a href="http://txizzle.github.io/blog/Adviz-Part-1/" title="adViz, Part 1&#58; Building My First MVP"><img src="http://txizzle.github.io/blog/images/garg.png" alt="adViz, Part 1&#58; Building My First MVP"></a>
+      </div><!-- /.entry-image -->
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2016-01-14T00:00:00-08:00"><a href="http://txizzle.github.io/blog/Adviz-Part-1/">January 14, 2016</a></time></span><span class="author vcard"><span class="fn"><a href="http://txizzle.github.io/blog/about/" title="About Ted Xiao">Ted Xiao</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~3 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://txizzle.github.io/blog/Adviz-Part-1/" rel="bookmark" title="adViz, Part 1&#58; Building My First MVP" itemprop="url">adViz, Part 1&#58; Building My First MVP</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>I’ve built an a MVP as part of a startup I’m working on that has expanded out of a course project, and it has been quite the ride. In these posts, I’ll write about the ideas, the tech, the journey - and more.</p>
+
+
+    ...
+    
+      <p><a href="http://txizzle.github.io/blog/Adviz-Part-1/" rel="bookmark" title="adViz, Part 1&#58; Building My First MVP" itemprop="url">Read more</a></p>
+    
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-12-19T00:00:00-08:00"><a href="http://txizzle.github.io/blog/Internship-Overview/">December 19, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://txizzle.github.io/blog/about/" title="About Ted Xiao">Ted Xiao</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~5 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://txizzle.github.io/blog/Internship-Overview/" rel="bookmark" title="The Hunt&#58; The 2015 Internship Journey" itemprop="url">The Hunt&#58; The 2015 Internship Journey</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>This year, like many third-year students, I’ve looked exhaustively for “the one” internship that’s supposed to crown your junior year or even your college experience in general. It’s been an arduous grind, but 21 interviews later, I’ve signed with Amazon to spend my 2016 Summer as a Software Development Engineer Intern. I’ve learned so much in this process, and I think some of my takeaways will be useful for others.</p>
+
+
+    ...
+    
+      <p><a href="http://txizzle.github.io/blog/Internship-Overview/" rel="bookmark" title="The Hunt&#58; The 2015 Internship Journey" itemprop="url">Read more</a></p>
+    
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-11-14T00:00:00-08:00"><a href="http://txizzle.github.io/blog/Blog-Tags/">November 14, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://txizzle.github.io/blog/about/" title="About Ted Xiao">Ted Xiao</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+Reading time ~2 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://txizzle.github.io/blog/Blog-Tags/" rel="bookmark" title="Adding Tags to Jekyll Now" itemprop="url">Adding Tags to Jekyll Now</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>I thought I’d start off by writing about something fresh in my mind: the technical aspects of this blog! I’ve decided to use a static page blog using <a href="https://jekyllrb.com/">Jekyll</a> and hosted by Github. In addition, I’m using a out-of-the-box solution called <a href="https://github.com/barryclark/jekyll-now">jekyll-now</a>. I’ve chosen Jekyll for a variety reasons, but the main ones are:</p>
+
+
+    ...
+    
+      <p><a href="http://txizzle.github.io/blog/Blog-Tags/" rel="bookmark" title="Adding Tags to Jekyll Now" itemprop="url">Read more</a></p>
+    
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+
+
+<div class="pagination">
+  <ul class="inline-list">
+    
+    
+
+    
+    
+      <li><strong class="current-page">1</strong></li>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+
+    
+      <li><a href="http://txizzle.github.io/blog/page2/">2</a></li>
+    
+
+    
+    
+      <li><a href="http://txizzle.github.io/blog/page2/" class="btn">Next</a></li>
+    
+  </ul>
+</div>
+
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2016 Ted Xiao. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://txizzle.github.io/blog/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://txizzle.github.io/blog/assets/js/scripts.min.js"></script>
+
+
+
+          
+
+</body>
+</html>
