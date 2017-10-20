@@ -2,7 +2,7 @@
 layout: post
 title: The Hunt&#58; The 2015 Internship Journey
 description: "What I learned from way too many applications and interviews."
-tags: [internship, amazon, SE, PM]
+tags: [interviews, amazon, SE, PM]
 ---
 
 This year, like many third-year students, I've looked exhaustively for "the one" internship that's supposed to crown your junior year or even your college experience in general. It's been an arduous grind, but 21 interviews later, I've signed with Amazon to spend my 2016 Summer as a Software Development Engineer Intern. I've learned so much in this process, and I think some of my takeaways will be useful for others. 
@@ -55,7 +55,7 @@ For SE:
   * A "strong internship" at another top tier company (Facebook, Google, etc.)
   * A significant project, which means many many Github stars or thousands of users
   * Stellar performance in the hardest CS classes your university offers
-* Figure out what type interviewing-style your interview likes. If they want to lead and tell you exactly which steps you should do (Make a class and explain it to me. Now make a signature... etc.), let them lead. If they let you do your own thing, be proactive. 
+* Figure out what type interviewing-style your interviewer likes. If they want to lead and tell you exactly which steps you should do (Make a class and explain it to me. Now make a signature... etc.), let them lead. If they let you do your own thing, be proactive. 
 * If you find yourself rambling or your interviewer's tone changes, regroup. Fail fast and cut your losses! When you spend 10 minutes of straight talking on a simple question and then your interviewer chastises you and provides a very simple solution, you've probably lost that interview then and there. It's better to check in a few minutes into your monologue to make sure the house isn't on fire.
 * Think about optimal run times. If you have a 'dumb' solution but the space and time complexities match the optimal ones, maybe your 'dumb' solution isn't so dumb after all. Fit the solution to the scope of the problem!
 
@@ -68,7 +68,7 @@ For SE:
 * Fit the solution to the problem.
 
 ## Bonus: Why Software Engineering?
-I've heard numerous EECS students at Cal note that UC Berkeley EECS culture is very heavily biased towards feeding into Silicon Valley Software Engineering (compared to Stanford or MIT). I'm not sure of the atmosphere at other universities, but I've definitely felt the pressure from what feels like a vast majority of EECS students eagerly following the "script" (mapped out beautifully in my friend's [article]): mid-size or small companies Freshman and Sophomore year, a large big-name company Junior year, with the sole goal of working as a Software Engineer immediately after graudation. Many students take almost identical courses without venturing far off the beaten path. We'll all find particular areas we're interested in, but Software Engineering is always a very safe default. But that's not necessarily a bad thing - the boatloads of cash, great perks, and a developer-centric culture are amenities unheard of in many other career paths. However, I'm not enthused that most students choose this path, and I wish that there was a more diverse array of opportunites that are actively persued in larger volumes.
+I've heard numerous EECS students at Cal note that UC Berkeley EECS culture is very heavily biased towards feeding into Silicon Valley Software Engineering (compared to Stanford or MIT). I'm not sure of the atmosphere at other universities, but I've definitely felt the pressure from what feels like a vast majority of EECS students eagerly following the "script" (mapped out beautifully in my friend's [article]): mid-size or small companies Freshman and Sophomore year, a large big-name company Junior year, with the sole goal of working as a Software Engineer immediately after graduation. Many students take almost identical courses without venturing far off the beaten path. We'll all find particular areas we're interested in, but Software Engineering is always a very safe default. But that's not necessarily a bad thing - the boatloads of cash, great perks, and a developer-centric culture are amenities unheard of in many other career paths. However, I'm not enthused that most students choose this path, and I wish that there was a more diverse array of opportunites that are actively persued in larger volumes.
 
 However, in the meantime, I do recognize the flexibility of Software Engineering. I'm not sure at all that I want to be a Software Engineer full-time for an extended amount of time, but I believe the skills I'll learn as a Software Engineer are invaluable wherever I go. Do I feel mildly pidgeonholed into Software Engineering? Absolutely! Is this a bad thing? Maybe not. I want to be a Data Scientist, I want to found a startup, I want to be a PM... but the skills I'll learn this summer will help me regardless of where I'm heading in the next few years. 
 
