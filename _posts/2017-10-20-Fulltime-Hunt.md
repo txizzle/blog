@@ -3,12 +3,9 @@ layout: post
 title: The Hunt&#58; The 2016 Full-time Job Hunt
 description: "Two tricks that recruiters DON'T want you to know!"
 tags: [interviews, google, SE, machine learning]
+image:
+  feature: owl_laptop.jpg
 ---
-
-# The Hunt for a Full Time Role
-
-
-## Introduction
 
 Almost 2 years ago, I spent absurd amounts of time searching for a Junior-year internship. I definitely learned a lot throughout the process, and you can read more about my takeaways [here]. This past year, I tried to apply what I learned to full time recruiting. It seems to me that full time recruiting was fairly similar to internship recruiting, but as can be expected, it felt somewhat *bigger*: more interview rounds, longer interviews, and more involved interview processes. 
 
